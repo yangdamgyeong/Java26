@@ -30,8 +30,8 @@ public class StartMenu extends ConsoleMenu {
 		System.out.println("이용해주셔서 감사합니다.");
 	}
 
-	private void join() {
-		System.out.println("::: 회원가입 :::");
+	private void login() {
+		System.out.println("::: 로그인 :::");
 		String id = input.readString(">> 아이디 : ");
 		String password = input.readString(">> 비밀번호 : ");
 		
@@ -46,10 +46,8 @@ public class StartMenu extends ConsoleMenu {
 		}
 	}
 
-	private void login() {
-		System.out.println("::: 로그인 :::");
-		String id = input.readString(">> 아이디 : ");
-		String password = input.readString(">> 비밀번호 : ");
+	private void join() {
+		System.out.println("::: 회원가입 :::");
 	}
 	
 	
