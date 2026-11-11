@@ -5,14 +5,14 @@ import java.util.List;
 import bank.account.Account;
 import bank.account.AccountDao;
 import bank.account.AccountListDao;
+import bank.account.AccountMapDao;
 
 public class TestAccount {
 	public static void main(String[] args) {
-		testAccountDao();
+		testAccountDao(new AccountMapDao());
 	}
 	
-	public static void testAccountDao() {
-		AccountDao adao = new AccountListDao();
+	public static void testAccountDao(AccountDao adao) {
 		
 		// 계좌 추가
 		System.out.println(">>> 계좌 추가");
